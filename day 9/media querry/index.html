@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        background-color: #ddd;
+        height: 100vh;
+      }
+
+      div {
+        flex-basis: 25%;
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+
+      @media (min-width: 641px) {
+        body {
+          background-color: rebeccapurple;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        body {
+          background-color: goldenrod;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          flex-direction: column;
+        }
+        div {
+          flex-basis: 50%;
+        }
+      }
+
+      @media (orientation: landscape) and (max-height: 200px) {
+        div {
+          background-color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
