@@ -1,11 +1,11 @@
-// window.addEventListener('scroll', function () {
-//  console.log("skrolujesz!")
-// })
+window.addEventListener('scroll', function () {
+ console.log("skrolujesz!")
+})
 
 // konkatenacja
-// document.addEventListener('scroll', function () {
-//  console.log("skrolujesz o " + window.scrollY + "px")
-// })
+document.addEventListener('scroll', function () {
+ console.log("skrolujesz o " + window.scrollY + "px")
+})
 
 // użycie zadeklarowanej funkcji
 // function showScrollSize() {
