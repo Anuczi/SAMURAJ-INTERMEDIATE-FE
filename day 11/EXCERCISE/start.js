@@ -10,7 +10,7 @@ let textSize = 20;
 text.style.fontSize = textSize + 'px';
 text.style.color
  = '#aaa';
- text.style.backgroundColor = '#ddd'
+ text.style.backgroundClip = '#ddd'
 
 
 //3. Okreslenie akcji - napisanie funkcji 
