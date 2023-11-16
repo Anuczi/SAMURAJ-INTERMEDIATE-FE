@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 150vh ;
+}
+
+.wrapper {
+    margin: 20px 200px 0 70px ;
+    font-family: Arial, sans-serif;
+}
+
+.arrow {
+    position: fixed;
+    right: 3vh;
+    bottom: 5vh;
+    width: 3vw;
+    height: 3vw;
+    line-height: 3vw;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.arrow.on{    
+    transform: rotate(180deg);
+    bottom: calc(5vh + 270px);
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    bottom: -270px;
+    background-color: #000;
+    transition: .5s;
+}
+
+nav.on {
+bottom: 0;
+}
+
